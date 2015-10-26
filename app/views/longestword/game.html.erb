@@ -1,0 +1,11 @@
+<h1>Longestword#game</h1>
+<p>Find me in app/views/longestword/game.html.erb</p>
+
+<%= @grid %>
+
+<form action="/score" type="get" >
+  <label for="question">what is your guess?</label>
+  <input type="text" id="answer" name="guess" placeholder="write your word here">
+  <input type="submit" value="Done">
+  <input type="hidden" name="start" value="<%= @start %>">
+</form>
